@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+</head>
+<body>
+
+    <h2>College Application Form</h2>
+
+    <form action="/submit" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <label for="highschool">High School:</label>
+        <input type="text" id="highschool" name="highschool" required>
+        <br>
+
+        <label for="gpa">High School GPA:</label>
+        <input type="number" id="gpa" name="gpa" step="0.01" required>
+        <br>
+
+        <label for="program">Program of Interest:</label>
+        <select id="program" name="program" required>
+            <option value="computer-science">Computer Science</option>
+            <option value="biology">Biology</option>
+            <option value="business">Business Administration</option>
+        </select>
+        <br>
+
+        
+        <label for="essay">Personal Statement:</label>
+        <textarea id="essay" name="essay" rows="4" cols="50" required></textarea>
+        <br>
+
+        
+        <button type="submit">Submit Application</button>
+    </form>
+
+</body>
+</html>
