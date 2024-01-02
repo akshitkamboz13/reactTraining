@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.grid-items{
+    border: 2px solid black;
+}
+.grid-items-one,.grid-items-six{
+    background-color: aquamarine;
+    grid-column: 1/12;
+}
+.grid-items-two{
+    background-color: blue;
+    grid-row:3/50;
+    grid-column:1/1;
+}
+.grid-items-three{
+    background-color: aqua;
+    grid-row: 3/50;
+    grid-column: 2/11;
+}
+.grid-items-four{
+    background-color: rgb(200, 0, 255);
+    grid-row: 3/50;
+    grid-column: 11/12;
+}

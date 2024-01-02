@@ -1,0 +1,18 @@
+div>h1{
+     background-image: radial-gradient(pink, blueviolet);
+}
+div h1{
+    color: blueviolet;
+   
+}
+
+div h2:nth-child(even){
+    background-color: pink;
+}
+
+h2:nth-child(5){
+    color: blue;
+}
+h2:last-child{
+    color: brown;
+}
