@@ -1,0 +1,85 @@
+
+body{
+    background-color: rgb(0, 0, 185); 
+}
+
+.design1{
+    background-color: rgb(255, 225, 0);
+    height: 200px;
+    width: 1000px;
+    position: fixed;
+    rotate: 35deg;
+   transform: translate(-25%);
+   top: 700px;
+}
+.design2{
+    background-color: rgb(255, 225, 0);
+    height: 2000px;
+    width: 2000px;
+    position: fixed;
+    rotate: -50deg;
+   right: -90%;
+   top: -25%;
+}
+.container{
+    margin: 100px 150px;
+    position: fixed;
+    background-color: white;
+    height: 1000px;
+    width: 1200px;
+    border: 2px solid white;
+    border-radius: .5%;
+}
+.nav1{
+    height: 30px;
+    background-color: rgb(0, 0, 83);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    color: rgb(255, 0, 0);
+    padding: 0 50px;
+    
+}
+.nav1 a{
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+}
+.joinbtn{
+    margin-left: 500px;
+    padding: 7px 18px;
+    background-color: rgb(255, 225, 0);
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav2{
+    height: 35px;
+    background-color: rgb(255, 238, 238);
+    padding: 5px 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    margin: 0%;
+}
+.logo h2{
+    margin: .5% 0;
+    text-decoration: none;
+    color: blueviolet;
+}
+.seee{
+    grid-column: 4/4;
+    padding: 7px 0px;
+}
+.menu{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding-top: 8px;
+}
+div>select{
+    border: 0px;
+    background-color: rgb(255, 238, 238);
+}

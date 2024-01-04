@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h1>Age Checker</h1>
+    <input type="number" id="age">
+    <button onclick="checkage()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkage() {
+            const agge = document.getElementById("age").value;
+            const bave = agge >= 8 ? "can" : "can't"; 
+            const reuu = document.getElementById("result"); 
+            reuu.textContent = `You ${bave} marry.`;
+        }
+    </script>
+</body>
+</html>

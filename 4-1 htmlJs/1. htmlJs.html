@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        let a=15;
+        let b=25;
+        let c=35;
+        console.log(typeof(a + b));
+
+        let str1 = "11";
+        let str2 = "22";
+        let str3 = "33"
+        console.log(str1 + " " + str2);
+
+        a = a + "";
+        console.log(typeof(a));
+        c = String(c);
+        console.log(typeof(c));
+
+        str1 = str1 - "";
+        console.log(typeof(str1));
+        str2= +str2;
+        console.log(typeof(2));
+        str3 = Number(str3);
+        console.log(typeof(str3));
+
+        console.log(typeof null);
+
+        //big int
+        let num1 = 64524266254265544657643546816125484;
+        console.log(num1);
+        let num2 = 64524266254265544657643546816125484n;
+        console.log(num2);
+        console.log(typeof num2);
+
+        num1 = BigInt(num1);
+        console.log(num1);
+
+        // == and ===
+        let p = 7;
+        let q = "7";
+        console.log(p == q);
+        console.log(p === q);
+
+        
+    </script>
+</body>
+</html>
