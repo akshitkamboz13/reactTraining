@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        let a = 145267;
+        let ans =0
+        while(a > 0){
+            let c = a % 10;
+            ans = ans * 10 + c; 
+            a = Math.floor(a/10); 
+        }
+        console.log(ans);
+
+        ans = ans + "";
+        for(let p = ans.length; p>0; p--){
+            console.log(ans[p-1])
+        }
+    </script>
+</body>
+</html>
