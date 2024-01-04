@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        let a = 15;
+        let b = 16;
+        let c = 120;
+        if(a>b && a>c){
+            console.log( b>c? b:c);
+        }
+        else if(b>c&&b>a){
+            console.log(a>c?a:c);
+        }
+        else if(c>a&&c>b){
+            console.log(a>b?a:b);
+        }
+        else if(a==b){
+            console.log(a>b?"a = b ="+a:c);
+        }
+        else if(a==c){
+            console.log(a>b?"a = c ="+ a:b);
+        }
+        else if(b==c){
+            console.log(b>a?"b = c ="+ b:a);
+        }
+        else if(a==b && b==c){
+            console.log("all are equal");
+        }
+        else{
+            console.log("error");
+        }
+    </script>
+</body>
+</html>
