@@ -1,7 +1,10 @@
 //array methods
 
 let arr1 = [1,5,99,45,99,145,155,15,99,525];
-//Map
+
+let mmap = arr1.map((ii)=> arr1[ii]);
+console.log(mmap);
+
 arr1.splice(2,2,77,66);
 console.log(arr1);
 //filter
