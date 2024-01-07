@@ -66,6 +66,8 @@ setTimeout(()=>{
     console.log("hello");
 },[5000])
 
+
+const clock = document.getElementById("clock");
 setInterval(()=>{
-    console.log(new Date().getHours() , ":",new Date().getMinutes() , ":", new Date().getSeconds());
-},[1000])
+    console.log(new Date().getHours() , ":",new Date().getMinutes() , ":", new Date().getSeconds())
+},[3000])
