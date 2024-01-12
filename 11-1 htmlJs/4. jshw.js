@@ -10,8 +10,6 @@ function myfunc() {
             tableHTML += `<td>hello</td>`
         }
         tableHTML += '</tr>'
-    
-        
     }
     mydiv.innerHTML = tableHTML;
 }
