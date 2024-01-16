@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calculator {
+            border: 1px solid black;
+            width: 280px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        .display {
+            height: 30px;
+            background-color: #e0e0e0;
+            text-align: right;
+            padding: 5px;
+        }
+
+        button {
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('*')">*</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendOperator('+')">+</button>
+        <button onclick="calculateResult()">=</button>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let equation = '';
+
+        function appendNumber(number) {
+            equation += number;
+            display.textContent = equation;
+        }
+
+        function appendOperator(operator) {
+            equation += operator;
+            display.textContent = equation;
+        }
+
+        function clearDisplay() {
+            equation = '';
+            display.textContent = equation;
+        }
+
+        function calculateResult() {
+            try {
+                equation = eval(equation);
+                display.textContent = equation;
+            } catch (error) {
+                alert('Invalid expression');
+            }
+        }
+    </script>
+</body>
+</html>

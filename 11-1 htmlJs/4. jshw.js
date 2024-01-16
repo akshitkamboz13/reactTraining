@@ -11,5 +11,7 @@ function myfunc() {
         }
         tableHTML += '</tr>'
     }
+    tableHTML += `</table>`
+    console.log(tableHTML);
     mydiv.innerHTML = tableHTML;
 }
